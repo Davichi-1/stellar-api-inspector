@@ -1,14 +1,14 @@
 {
   "name": "stellar-api-inspector",
   "version": "1.0.0",
-  "description": "🔍 A command-line inspection and health-checking tool for Stellar Horizon and Soroban RPC endpoints.",
+  "description": "\ud83d\udd0d A command-line inspection and health-checking tool for Stellar Horizon and Soroban RPC endpoints.",
   "main": "dist/src/cli/index.js",
   "bin": {
     "stellar-api-inspector": "./dist/src/cli/index.js"
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "ts-node src/cli/index.ts",
+    "build": "node api.js && tsc",
+    "dev": "node api.js && ts-node src/cli/index.ts",
     "lint": "eslint \"src/**/*.ts\" \"tests/**/*.ts\"",
     "lint:fix": "eslint \"src/**/*.ts\" \"tests/**/*.ts\" --fix",
     "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
